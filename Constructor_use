@@ -1,0 +1,22 @@
+#include <iostream>
+
+class MyClass {
+public:
+    int data;
+
+    // Constructor
+    MyClass() {
+        std::cout << "Constructor called" << std::endl;
+        data = 0; // Initialize data member
+    }
+};
+
+int main() {
+    // Create an object of MyClass
+    MyClass obj;
+
+    // Access and print the initialized data member
+    std::cout << "Data member value: " << obj.data << std::endl;
+
+    return 0;
+}
